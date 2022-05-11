@@ -1,0 +1,26 @@
+doctype
+html(lang='en')
+    head
+        title Nick's Tools
+        link(rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.css')
+        link(rel='stylesheet' href='/css/style.css')
+body
+    .container
+header.d-flex.flex-wrap.justify-content-center.py-3.mb-4.border-bottom
+    a.d-flex.align-items-center.mb-3.mb-md-0.me-md-auto.text-dark.text-decoration-none(href='/')
+        svg.bi.me-2(width='40' height='32')
+            use(xlink:href='#bootstrap')
+        span.fs-4 Nick's Tools
+    ul.nav.nav-pills
+        li.nav-item
+            a.nav-link.active(href='/' aria-current='page') Home
+        li.nav-item
+            a.nav-link(href='/articles/add') Add Article
+
+    .container
+        block content
+        br
+        hr
+        
+script(src='/bower_components/bootstrap/dist/js/bootstrap.js')
+script(src='js/main.js')
